@@ -40,6 +40,25 @@
   font-family: MTD-Simpletune;
   src: url(./../fonts/MTD-Simpletune.otf);
 }
+@font-face {
+  font-family: 'MTD Mirosa';
+  src: url(./../fonts/MTDMirosa.otf);
+}
+@font-face {
+  font-family: 'UTM Davida';
+  src: url(./../fonts/UTMDavida.ttf);
+}
+@font-face {
+  font-family: 'UTM Colossalis';
+  src: url(./../fonts/UTMColossalis.ttf);
+}
+@font-face {
+  font-family: 'UTM Impact';
+  src: url(./../fonts/UTMImpact.ttf);
+}
+
+
+
 
 @media screen and (max-width: 1366px) {
   .img_fixed_homepage_1 , .img_fixed_homepage_2 {
