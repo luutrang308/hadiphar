@@ -485,7 +485,23 @@ $(document).ready(function() {
     $('.section_header').toggleClass('section_header_open');
   })
 
+  $('.row .footer_item').click(function(event) {
+    if ($('.row').hasClass('element_footer_click')) {
+      $('.row .footer_item').not($(this)).removeClass('active');
+    }
+    $(this).toggleClass('active');
+  });
 
+  $('.main_menu>li').click(function(event) {
+    if ($('.main_menu').hasClass('main_menu_mobi')) {
+      $('.main_menu>li').not($(this)).removeClass('active');
+    }
+    $(this).toggleClass('active');
+  });
+
+  $('.close_main_menu').click(function(){
+    $('.section_header').toggleClass('section_header_open');
+  })
 
 
 })
