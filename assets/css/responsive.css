@@ -918,4 +918,14 @@
   .main {
     overflow: hidden;
   }
+  .slider_news .slick-prev {
+    opacity: 1;
+    top: 22%;
+    left: 0;
+  }
+  .slider_news .slick-next {
+    top: 22%;
+    opacity: 1;
+    right: 8px;
+  }
 }
