@@ -216,6 +216,7 @@ a:hover {
   box-sizing: border-box;
   box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
   border-radius: 52px;
+  display: none;
 }
 .section_banner_slider .item .btn_hotline img {
   max-width: 100%;
@@ -395,10 +396,10 @@ a:hover {
   margin-left: 35px;
 }
 .title_default span img:first-child {
-  margin-right: 20px;
+  margin-right: 15px;
 }
 .title_default span img:last-child {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .title_blue {
@@ -410,10 +411,10 @@ a:hover {
   color: #0C419A;
 }
 .title_blue span img:first-child {
-  margin-right: 25px;
+  margin-right: 15px;
 }
 .title_blue span img:last-child {
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 .section_default {
@@ -441,6 +442,12 @@ a:hover {
   width: 100%;
   height: 100%;
   padding: 150px 0 50px 0;
+  opacity: 1;
+  transition: 5s;
+}
+
+.opacity_default {
+  opacity: 1 !important;
 }
 
 .element_text {
@@ -452,7 +459,9 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin-top: 40px;
+  margin-top: 60px;
+  margin-left: -100%;
+  transition: 1s;
 }
 .element_text:before {
   position: absolute;
@@ -520,6 +529,10 @@ a:hover {
   padding-left: 10px;
 }
 
+.righttoleft {
+  margin-left: 0 !important;
+}
+
 .element_sumenh {
   width: 100%;
   height: 100%;
@@ -539,6 +552,8 @@ a:hover {
   height: 86px;
   overflow: hidden;
   position: relative;
+  margin-left: -100%;
+  transition: 0.5s;
 }
 .element_sumenh .content_sumenh .item p {
   font-family: Arial;
@@ -548,7 +563,7 @@ a:hover {
   line-height: 149.99%;
   color: #FFFFFF;
   position: absolute;
-  left: 20px;
+  left: 30px;
   top: 50%;
   transform: translate(0, -50%);
   padding-right: 25px;
@@ -557,16 +572,19 @@ a:hover {
   background-image: url(./../img/s1.png);
   background-size: cover;
   background-repeat: no-repeat;
+  transition: 0.75s;
 }
 .element_sumenh .content_sumenh .item:nth-child(3) {
   background-image: url(./../img/s2.png);
   background-size: cover;
   background-repeat: no-repeat;
+  transition: 1s;
 }
 .element_sumenh .content_sumenh .item:nth-child(4) {
   background-image: url(./../img/s3.png);
   background-size: cover;
   background-repeat: no-repeat;
+  transition: 1.25s;
 }
 .element_sumenh .content_sumenh .item:nth-child(4) p {
   color: #383838;
@@ -575,10 +593,13 @@ a:hover {
   background-image: url(./../img/s4.png);
   background-size: cover;
   background-repeat: no-repeat;
+  transition: 1.5s;
 }
 .element_sumenh .img_sumenh {
   width: 48%;
   margin-left: auto;
+  transition: 1s;
+  opacity: 0;
 }
 .element_sumenh .img_sumenh .img {
   width: 85%;
@@ -609,6 +630,10 @@ a:hover {
   object-fit: cover;
 }
 
+.lefttoright {
+  opacity: 1 !important;
+}
+
 .element_giatricotloi {
   width: 100%;
   height: 100%;
@@ -633,6 +658,8 @@ a:hover {
 }
 .element_giatricotloi_content .item {
   width: 21%;
+  margin-left: -100%;
+  transition: 1s;
 }
 .element_giatricotloi_content .item:hover .img {
   background: #F36523;
@@ -1027,7 +1054,7 @@ a:hover {
   align-items: center;
 }
 .section_header .header_fixed .logo {
-  margin-left: 375px;
+  margin-left: 355px;
 }
 .section_header .header_fixed .logo img {
   max-width: 100%;
@@ -1085,10 +1112,10 @@ a:hover {
 }
 .element_main_menu .main_menu > li .submenu {
   width: 200px;
-  padding: 15px;
+  padding: 0px 15px 0 15px;
   position: absolute;
   background: #fff;
-  bottom: -140px;
+  bottom: -194px;
   left: -30px;
   visibility: hidden;
   z-index: -999;
@@ -1098,6 +1125,20 @@ a:hover {
 .element_main_menu .main_menu > li .submenu .submenu_main {
   padding: 0;
   list-style: none;
+}
+.element_main_menu .main_menu > li .submenu .submenu_main li {
+  height: 40px;
+  border-bottom: 1px solid #0000007a;
+}
+.element_main_menu .main_menu > li .submenu .submenu_main li a {
+  line-height: 40px;
+  color: #0b419a;
+}
+.element_main_menu .main_menu > li .submenu .submenu_main li a:hover {
+  color: #000;
+}
+.element_main_menu .main_menu > li .submenu .submenu_main li:last-child {
+  border-bottom: none;
 }
 .element_main_menu .main_menu > li > a {
   font-family: Arial;
@@ -1169,9 +1210,14 @@ a:hover {
   background: #fff;
 }
 
+.righttoleft_1 {
+  margin-left: 100px !important;
+}
+
 .diamond-grid-page {
   margin-top: -150px;
-  margin-left: 100px;
+  margin-left: 100%;
+  transition: 1s;
 }
 .diamond-grid-page .grid {
   display: grid;
@@ -1234,6 +1280,14 @@ a:hover {
   height: 100%;
   object-fit: cover;
   transform: rotate(-45deg);
+  transition: 0.5s;
+}
+.diamond-grid-page .grid .default .img-over:hover img {
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 .diamond-grid-page .grid .default div {
   background-size: cover;

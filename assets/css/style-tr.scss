@@ -214,6 +214,7 @@ a:hover {
             box-sizing: border-box;
             box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
             border-radius: 52px;
+            display: none;
             img {
                 max-width: 100%;
                 margin-right: 10px;
@@ -407,10 +408,10 @@ a:hover {
     span {
         img {
             &:first-child {
-                margin-right: 20px;
+                margin-right: 15px;
             }
             &:last-child {
-                margin-left: 20px;
+                margin-left: 15px;
             }
         }
     }
@@ -426,10 +427,10 @@ a:hover {
     span {
         img {
             &:first-child {
-                margin-right: 25px;
+                margin-right: 15px;
             }
             &:last-child {
-                margin-left: 25px;
+                margin-left: 15px;
             }
         }
     }
@@ -458,10 +459,14 @@ a:hover {
             width: 100%;
             height: 100%;
             padding: 150px 0 50px 0;
+            opacity: 1;
+            transition: 5s;
         }
     }
 }
-
+.opacity_default {
+    opacity: 1 !important;
+}
 .element_text {
     width: 60%;
     background: linear-gradient(90deg, #00245E 13.1%, #013D9D 50.64%, #00245E 88.18%);
@@ -471,7 +476,9 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-left: -100%;
+    transition: 1s;
     &:before {
         position: absolute;
         content: '';
@@ -540,7 +547,9 @@ a:hover {
         }
     }
 }
-
+.righttoleft {
+    margin-left: 0 !important;
+}
 .element_sumenh {
     width: 100%;
     height: 100%;
@@ -558,6 +567,8 @@ a:hover {
             height: 86px;
             overflow: hidden;
             position: relative;
+            margin-left: -100%;
+            transition: 0.5s;
             p {
                 font-family: Arial;
                 font-style: normal;
@@ -566,7 +577,7 @@ a:hover {
                 line-height: 149.99%;
                 color: #FFFFFF;
                 position: absolute;
-                left: 20px;
+                left: 30px;
                 top: 50%;
                 transform: translate(0, -50%);
                 padding-right: 25px;
@@ -575,16 +586,19 @@ a:hover {
                 background-image: url(./../img/s1.png);
                 background-size: cover;
                 background-repeat: no-repeat;
+                transition: 0.75s;
             }
             &:nth-child(3) {
                 background-image: url(./../img/s2.png);
                 background-size: cover;
                 background-repeat: no-repeat;
+                transition: 1s;
             }
             &:nth-child(4) {
                 background-image: url(./../img/s3.png);
                 background-size: cover;
                 background-repeat: no-repeat;
+                transition: 1.25s;
                 p {
                     color: #383838;
                 }
@@ -593,12 +607,15 @@ a:hover {
                 background-image: url(./../img/s4.png);
                 background-size: cover;
                 background-repeat: no-repeat;
+                transition: 1.5s;
             }
         }
     }
     .img_sumenh {
         width: 48%;
         margin-left: auto;
+        transition: 1s;
+        opacity: 0;
         .img {
             width: 85%;
             position: relative;
@@ -629,7 +646,9 @@ a:hover {
         }
     }
 }
-
+.lefttoright {
+    opacity: 1 !important;
+}
 .element_giatricotloi {
     width: 100%;
     height: 100%;
@@ -652,6 +671,8 @@ a:hover {
     margin-top: 100px;
     .item {
         width: 21%;
+        margin-left: -100%;
+        transition: 1s;
         &:hover {
             .img {
                 background: #F36523;
@@ -1092,7 +1113,7 @@ a:hover {
         padding: 15px 0;
         align-items: center;
         .logo {
-            margin-left: 375px;
+            margin-left: 355px;
             img {
                 max-width: 100%;
             }
@@ -1150,10 +1171,10 @@ a:hover {
             }
             .submenu {
                 width: 200px;
-                padding: 15px;
+                padding: 0px 15px 0 15px;
                 position: absolute;
                 background: #fff;
-                bottom: -140px;
+                bottom: -194px;
                 left: -30px;
                 visibility: hidden;
                 z-index: -999;
@@ -1162,6 +1183,20 @@ a:hover {
                 .submenu_main {
                     padding: 0;
                     list-style: none;
+                    li {
+                        height: 40px;
+                        border-bottom: 1px solid #0000007a;
+                        a {
+                            line-height: 40px;
+                            color: #0b419a;
+                            &:hover {
+                                color: #000;
+                            }
+                        }
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                    }
                 }
 
             }
@@ -1243,10 +1278,13 @@ a:hover {
         }
     }
 }
-
+.righttoleft_1 {
+    margin-left: 100px !important;
+}
 .diamond-grid-page {
     margin-top: -150px;
-    margin-left: 100px;
+    margin-left: 100%;
+    transition: 1s;
     .grid {
         display: grid;
         width:100%;
@@ -1305,6 +1343,16 @@ a:hover {
                     height: 100%;
                     object-fit: cover;
                     transform: rotate(-45deg);
+                    transition: 0.5s;
+                }
+                &:hover {
+                    img {
+                        width: 120%;
+                        height: 120%;
+                        object-fit: cover;
+                        margin-top: -30px;
+                        margin-left: -30px;
+                    }
                 }
             }
             div {

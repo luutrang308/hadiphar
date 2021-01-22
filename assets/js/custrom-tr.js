@@ -297,11 +297,18 @@ if (chieurong > 991) {
 
         /**/
         var attrSection = $('.section.active').attr('data-index');
-        if (attrSection == 2 || attrSection == 4) {
+        if (attrSection == 2) {
           $('.header_fixed').addClass('change_color');
+          $('.section_default .element_text').addClass('righttoleft');
+          $('.diamond-grid-page').addClass('righttoleft_1');
+        } else if (attrSection == 4) {
+          $('.element_giatricotloi_content .item').addClass('righttoleft');
         }
-        else {
+        else if (attrSection != 2 || attrSection != 4) {
           $('.header_fixed').removeClass('change_color');
+          $('.element_sumenh .content_sumenh .item').addClass('righttoleft');
+          $('.img_sumenh').addClass('lefttoright');
+          
         }
         
     }
@@ -462,7 +469,7 @@ $(document).ready(function() {
   $('.section_banner_slider').slick({
     dots: false,
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
     arrows: true,
   });
 
@@ -541,3 +548,4 @@ if (chieurong < 991) {
     }
   });
 }
+
