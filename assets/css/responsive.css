@@ -109,8 +109,11 @@
     margin-top: 30px;
   }
   .diamond-grid-page {
-    margin-top: -40px;
+    margin-top: -110px;
     margin-left: 200px;
+  }
+  .righttoleft_1 {
+    margin-left: 250px !important;
   }
   .element_giatricotloi {
     padding-top: 70px;
